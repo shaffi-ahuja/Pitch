@@ -12,3 +12,6 @@ https://www.figma.com/design/TMGW6rLGene3cqHb4Kilz5/Pitch-Startup-App?node-id=62
 
 https://ui.shadcn.com/docs/cli
 
+https://www.sanity.io/manage/personal/project/wq5r9b3w/getting-started
+
+https://www.sanity.io/learn/course/content-driven-web-application-foundations/generate-typescript-types
