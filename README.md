@@ -24,9 +24,8 @@
 2. ⚙️ [Tech Stack](#tech-stack)
 3. 🔋 [Features](#features)
 4. 🤸 [Quick Start](#quick-start)
-5. 🕸️ [Snippets (Code to Copy)](#snippets)
-6. 🔗 [Assets](#links)
-7. 🚀 [More](#more)
+5. 🔗 [Assets](#links)
+6. 🚀 [More](#more)
 
 
 ## <a name="introduction">🤖 Introduction</a>
@@ -84,7 +83,7 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/JavaScript-Mastery-Pro/pitchify.git
+git clone https://github.com/shaffi-ahuja/pitch.git
 cd pitchify
 ```
 
@@ -126,7 +125,6 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 ## <a name="links">🔗 Assets</a>
 
 - Fonts and Assets used in the project can be found [here](https://drive.google.com/file/d/1OEFHnEq5pQFP86u8FOBLBBNxKPsbjjqU/view?usp=sharing)
-- [Learn Server Actions](https://youtu.be/FKZAXFjxlJI?feature=shared)
 
 Sanity
 - [Applicaton Workflow](https://miro.com/app/board/uXjVLT_tMdU=/?share_link_id=580854757703)
