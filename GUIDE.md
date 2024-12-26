@@ -98,3 +98,6 @@ To implement
 npm i server-only
 ```
 this package will ensure specific module will only be used in server components
+
+# Real Time Search with URL params
+update query with filters in queries.ts
