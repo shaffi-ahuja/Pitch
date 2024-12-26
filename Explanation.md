@@ -1,3 +1,4 @@
+# Setup
 Below code in package.json was added so that other dependencies/packages don't use other version of react like 18
 
 "packageManager": "npm@10.5.2",
@@ -7,18 +8,17 @@ Below code in package.json was added so that other dependencies/packages don't u
     "next": "$next"
   },
 
-
-
+# shadCN
 shadcn provides few installed icons which we can import from lucid and if we want to use any component we can directly install and it will get added to components/ui and we customise it as per our need
 
 ex: npx shadcn@latest add button
 
-
+# sanity
 To use Sanity for data
+https://www.sanity.io/manage/personal/project/wq5r9b3w/getting-started
 
 npm create sanity@latest -- --project wq5r9b3w --dataset production --template clean --typescript --output-path studio-pitch
 cd studio-pitch
-
 
 In structure schema we are using markdown type , its a custom field which use plugin by sanity
 
