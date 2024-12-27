@@ -244,8 +244,7 @@ Startup details - dynamic
 
 </br>
 
-# <span className="max-sm:hidden">Logout</span>
-                  <LogOut className="size-6 sm:hidden text-red-500" />
+# Responsiveness
 
 To make navbar responsive add classes to hide particular elements at particular screen size and for profile/user use avatar from shadcn using 
 
