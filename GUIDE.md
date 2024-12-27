@@ -234,4 +234,9 @@ To generate slug(unique identifier) we are using [slugify](https://www.npmjs.com
 ```bash
 npm i slugify
 ```
+</br>
+# User Profile
 
+Another use case of ppr  
+User details - static
+Startup details - dynamic
