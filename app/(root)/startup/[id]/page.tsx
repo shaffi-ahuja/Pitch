@@ -10,7 +10,7 @@ import { Skeleton } from '@/components/ui/skeleton';
 import View from '@/components/View';
 const md = markdownit();
 
-export const experimental_ppr = true;// sanity api to perform incremental static regeneration (ISR)
+export const experimental_ppr = true;
 
 const page = async ({ params }: { params: Promise<{ id: string }> }) => {
     const id = (await params).id;

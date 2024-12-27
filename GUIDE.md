@@ -3,6 +3,7 @@ https://www.figma.com/design/TMGW6rLGene3cqHb4Kilz5/Pitch-Startup-App?node-id=62
 
 https://miro.com/app/board/uXjVLT_tMdU=/
 
+</br>
 
 # Setup
 ```bash
@@ -29,6 +30,8 @@ Below code in package.json was added so that other dependencies/packages don't u
     "next": "$next"
   },
 ```
+</br>
+
 # Authentication via github
 
 https://authjs.dev/getting-started/authentication/oauth
@@ -37,6 +40,7 @@ https://authjs.dev/getting-started/providers/github
 
 https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app
 
+</br>
 
 # shadcn
 Refer(https://ui.shadcn.com/docs/cli)
@@ -49,6 +53,8 @@ ex:
 ```bash
 npx shadcn@latest add button
 ```
+</br>
+
 # Sanity
 To use Sanity for data
 https://www.sanity.io/manage/personal/project/wq5r9b3w/getting-started
@@ -84,6 +90,7 @@ Then run
 ```bash
 npm run typegen
 ```
+</br>
 
 # Cache and live api w next.js
 
@@ -98,10 +105,12 @@ To implement
 npm i server-only
 ```
 this package will ensure specific module will only be used in server components
+</br>
 
 # Real Time Search with URL params
 update query with filters in queries.ts
 
+</br>
 
 # Startup details
 We dont need live api here because we are not on details page all the time and need live updates 
@@ -130,4 +139,20 @@ In details page , to have dynamic component(Views) in PPR page we are using susp
 
 ```bash
 npx shadcn@latest add skeleton 
+```
+sanity api in page is using incremental static regeneration [(ISR)](https://nextjs.org/docs/pages/building-your-application/data-fetching/incremental-static-regeneration)
+<br/>
+
+# Sanity Write Client
+
+Write action can only happen from server side so we are adding server only in write-client
+
+ With this approach these two req will run sequentially , we won't see anything until these two are run and we will see only skeleton to run this in bg we can use [unstable_after/after ](https://nextjs.org/docs/app/api-reference/functions/after) from next js allows you to schedule work
+
+if after doesn't work withour explicitly enabling add it in next config
+```bash
+ experimental: {
+    ppr: 'incremental',
+    after: true, 
+  }
 ```
