@@ -235,8 +235,20 @@ To generate slug(unique identifier) we are using [slugify](https://www.npmjs.com
 npm i slugify
 ```
 </br>
+
 # User Profile
 
 Another use case of ppr  
 User details - static
 Startup details - dynamic
+
+</br>
+
+# <span className="max-sm:hidden">Logout</span>
+                  <LogOut className="size-6 sm:hidden text-red-500" />
+
+To make navbar responsive add classes to hide particular elements at particular screen size and for profile/user use avatar from shadcn using 
+
+```bash
+npx shadcn@latest add avatar
+```
