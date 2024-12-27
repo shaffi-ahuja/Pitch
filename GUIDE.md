@@ -164,5 +164,27 @@ When a user is logged in then we need to check if it exists as author or not if 
 
 After a successful sign in, we need to create author id from sanity to use it for our profile or when creating a new startup lets do it with jwt  (adding author id in token)
 
-
 Due to caching we will get undefined session even if everything is working fine as nextjs is using caching machenism so we'll have to false the usecdn param
+
+<br/>
+
+# Startup Form
+
+To make sure only loggedin user can access this page , we will check session before
+
+In startup Form we are going to be using following shadcn components
+
+```bash
+npx shadcn@latest add input textarea toast 
+```
+
+For markdown, we are using [@uiw/react-md-editor](https://www.npmjs.com/package/@uiw/react-md-editor)
+```bash
+npm i @uiw/react-md-editor
+```
+
+To submit form we have used [useActionState](https://react.dev/reference/react/useActionState) hook
+
+For validation we are using [zod](https://zod.dev/?id=from-npm)
+
+Create new file in lib folder (Validation.ts)
