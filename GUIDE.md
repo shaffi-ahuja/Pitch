@@ -246,8 +246,18 @@ Startup details - dynamic
 
 # Responsiveness
 
-To make navbar responsive add classes to hide particular elements at particular screen size and for profile/user use avatar from shadcn using 
+To make navbar responsive add classes to hide particular elements at particular screen size and for profile/user use avatar from shadcn using
 
 ```bash
 npx shadcn@latest add avatar
 ```
+
+</br>
+
+# Parallel Fetching and Recommendations
+
+For recommendations - create playlist schema and few posts from snaity directly and query those here under startup details pick under editor picks or anything sutaible
+
+We have to be aware of two data fetching [patterns](https://nextjs.org/docs/14/app/building-your-application/data-fetching/patterns) - parallel and sequential
+
+For independent request, use parallel - Promise.all - load time will be equal to longest among two not the sum of two
