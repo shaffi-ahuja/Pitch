@@ -156,3 +156,5 @@ if after doesn't work withour explicitly enabling add it in next config
     after: true, 
   }
 ```
+
+# Author Authentication Flow
