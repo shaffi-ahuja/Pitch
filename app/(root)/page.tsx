@@ -24,7 +24,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ q
         </h1>
         {/* exclamation mark for overriding */}
         <p className="sub-heading !max-w-3xl">
-          Submit your pitches, Cote on Pitches , and Get noticed in Virtual Competitions.</p>
+          Submit your pitches, Vote on Pitches , and Get noticed in Virtual Competitions.</p>
         <SearchForm query={query} />
       </section>
 
@@ -39,7 +39,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ q
             (posts.map((post: StartupTypeCard, index: number) =>
               <StartupCard key={post?._id} post={post} />
             ))
-            : (<p className="no-results">No startups found</p>)}
+            : (<p className="no-results">No startups found !</p>)}
 
         </ul>
       </section>
