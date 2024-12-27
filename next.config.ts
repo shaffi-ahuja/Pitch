@@ -14,6 +14,15 @@ const nextConfig: NextConfig = {
         hostname:'*'
       },
     ]
+  },
+  experimental: {
+    ppr: 'incremental',
+  },
+  // devindicators will help us visualize what is happening with ppr
+  devIndicators: {
+    appIsrStatus: true,
+    buildActivity: true,
+    buildActivityPosition: "bottom-right",
   }
 };
 

@@ -101,3 +101,33 @@ this package will ensure specific module will only be used in server components
 
 # Real Time Search with URL params
 update query with filters in queries.ts
+
+
+# Startup details
+We dont need live api here because we are not on details page all the time and need live updates 
+
+Diff rendering strategy on same page - Partial Prerendering - [PPR](https://nextjs.org/docs/app/building-your-application/rendering/partial-prerendering) 
+<br/>
+Single page can render static/revalidated/from cache and dynamic part 
+
+Update next.config.ts and
+[The experimental feature "experimental.ppr" can only be enabled when using the latest canary version of Next.js.] so make sure you have it
+
+```bash
+npm install next@canary
+```
+
+Fetch all the details in startup page 
+
+To convert markdown to html / string, install [markdown-it](https://www.npmjs.com/package/markdown-it)
+
+```bash
+npm i markdown-it
+npm i --save-dev @types/markdown-it
+```
+
+In details page , to have dynamic component(Views) in PPR page we are using suspense and as fallback we are using shadcn's skeleton component. To do so, run
+
+```bash
+npx shadcn@latest add skeleton 
+```
