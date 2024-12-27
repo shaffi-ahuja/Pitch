@@ -261,3 +261,7 @@ For recommendations - create playlist schema and few posts from snaity directly 
 We have to be aware of two data fetching [patterns](https://nextjs.org/docs/14/app/building-your-application/data-fetching/patterns) - parallel and sequential
 
 For independent request, use parallel - Promise.all - load time will be equal to longest among two not the sum of two
+
+# build errors in prod
+
+To avoid such unwanted errors in prod build we can follow [here](https://nextjs.org/docs/app/api-reference/config/next-config-js/typescript)
