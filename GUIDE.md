@@ -156,5 +156,13 @@ if after doesn't work withour explicitly enabling add it in next config
     after: true, 
   }
 ```
+<br/>
 
 # Author Authentication Flow
+
+When a user is logged in then we need to check if it exists as author or not if it doesn't then we are creating author in one of callbacks in auth.ts
+
+After a successful sign in, we need to create author id from sanity to use it for our profile or when creating a new startup lets do it with jwt  (adding author id in token)
+
+
+Due to caching we will get undefined session even if everything is working fine as nextjs is using caching machenism so we'll have to false the usecdn param
