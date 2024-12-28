@@ -48,7 +48,7 @@ pitches, and gain exposure through a clean minimalistic design for a smooth user
 👉 **GitHub Authentication**: Allows users to log in easily using their GitHub account.
 
 👉 **Pitch Submission**: Users can submit startup ideas, including title, description, category, and multimedia links (
-image or video).
+image ).
 
 👉 **View Pitches**: Browse through submitted ideas with filtering options by category.
 
