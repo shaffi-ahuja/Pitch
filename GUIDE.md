@@ -265,3 +265,7 @@ For independent request, use parallel - Promise.all - load time will be equal to
 # build errors in prod
 
 To avoid such unwanted errors in prod build we can follow [here](https://nextjs.org/docs/app/api-reference/config/next-config-js/typescript)
+
+# After Deployment
+
+Allow CORS origin in sanity and update url in git oauth
