@@ -2,8 +2,9 @@ import { auth } from '@/auth';
 import { StartupCardSkeleton } from '@/components/StartupCard';
 import UserStartups from '@/components/UserStartups';
 import { client } from '@/sanity/lib/client';
-import { AUTHOR_BY_AUTHOR_ID_QUERY } from '@/sanity/lib/queries';
+import { AUTHOR_BY_ID_QUERY } from '@/sanity/lib/queries';
 import Image from 'next/image';
+import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import React, { Suspense } from 'react'
 
@@ -13,7 +14,7 @@ const page = async ({ params }: { params: Promise<{ id: string }> }) => {
     const id = (await params).id;
     const session = await auth();
 
-    const user = await client.fetch(AUTHOR_BY_AUTHOR_ID_QUERY, { id })
+    const user = await client.fetch(AUTHOR_BY_ID_QUERY, { id })
     if (!user)
         return notFound();
 
@@ -33,12 +34,13 @@ const page = async ({ params }: { params: Promise<{ id: string }> }) => {
                         width={220}
                         height={220}
                         className='profile_image' />
-                    <p className='text-30-extrabold mt-7 text-center'>
+                    <p className='text-20-bold mt-7 text-center'>
                         @{user.username}
                     </p>
-                    <p className='mt-1 text-center text-14-normal'>
+                    <p className='mt-1 text-center text-16-normal'>
                         {user?.bio}
                     </p>
+                    <Link href={`mailto:${user?.email}`} className='mt-1 text-center text-14-normal'>{user?.email}</Link>
                 </div>
                 <div className='flex-1 flex flex-col gap-5 lg:-mt-5'>
                     <p className='text-30-bold'>
