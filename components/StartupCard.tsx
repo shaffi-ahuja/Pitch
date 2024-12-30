@@ -41,14 +41,14 @@ const StartupCard = ({ post }: { post: StartupTypeCard }) => {
                     <Image src={author?.image!} alt='placeholder' width={48} height={48} className='rounded-full' />
                 </Link>
             </div>
-            <Link href={`/startup/${_id}`}>
+            <Link href={`/startup/${_id}`} className='flex-grow'>
                 <p className='startup-card_desc'>
                     {description}
                 </p>
-                <img src={image} alt='placeholder' className='startup-car_img' />
+                <img src={image} alt='placeholder' className='startup-card_img' />
             </Link>
 
-            <div className='flex-between gap-3 mt-5'>
+            <div className='flex-between gap-3 mt-5 relative bottom-2'>
                 <Link href={`/?query=${category?.toLowerCase()}`}>
                     <p className='text-16-medium'>{category}
                     </p>
@@ -59,6 +59,7 @@ const StartupCard = ({ post }: { post: StartupTypeCard }) => {
                     </Link>
                 </Button>
             </div>
+            
         </li>
     )
 };

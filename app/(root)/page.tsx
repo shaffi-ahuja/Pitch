@@ -18,7 +18,8 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ q
   return (
     <>
       <section className="pink_container">
-        <h1 className="heading">Pitch your startup,
+        <h1 className="heading">
+          Pitch your startup,
           <br />
           Connect with Enterprenuers
         </h1>
