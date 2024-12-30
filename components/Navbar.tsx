@@ -8,7 +8,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 const Navbar = async () => {
     const session = await auth();
     return (
-        <header className="px-5 py-3 bg-white shadow-sm font-work-sans">
+        <header className="px-10 py-2 bg-white shadow-sm font-work-sans sticky top-0 ">
             <nav className="flex justify-between items-center">
                 <Link href="/">
                     <Image src="/logo.png" alt="logo" width={144} height={30} />
@@ -18,7 +18,7 @@ const Navbar = async () => {
                     {session && session?.user ? (
                         <>
                             <Link href="/startup/create">
-                                <span className="max-sm:hidden">Create</span>
+                                <span className="max-sm:hidden text-lg font-semibold">Create</span>
                                 <PlusCircle className="size-6 sm:hidden -mt-1" />
                             </Link>
 
@@ -30,7 +30,7 @@ const Navbar = async () => {
                                 }}
                             >
                                 <button type="submit">
-                                    <span className="max-sm:hidden">Logout</span>
+                                    <span className="max-sm:hidden text-lg font-semibold">Logout</span>
                                     <LogOut className="size-6 sm:hidden text-red-500" />
                                 </button>
                             </form>
@@ -51,7 +51,7 @@ const Navbar = async () => {
                                 await signIn("github");
                             }}
                         >
-                            <button type="submit">Login</button>
+                                <button type="submit" className="login_btn text-white">Login</button>
                         </form>
                     )}
                 </div>

@@ -45,7 +45,7 @@ const page = async ({ params }: { params: Promise<{ id: string }> }) => {
                         </Link>
                         <p className='category-tag'>{post.category}</p>
                     </div>
-                    <h3 className='text-30-bolc'>
+                    <h3 className='text-30-semibold'>
                         Pitch Details
                     </h3>
                     {parsedContent ?
@@ -66,9 +66,9 @@ const page = async ({ params }: { params: Promise<{ id: string }> }) => {
                             Editor Picks
                         </p>
                         <ul className='mt-7 card_grid-sm'>
-                            {editorPosts.map((post: StartupTypeCard, index: number) => (<>
+                            {editorPosts.map((post: StartupTypeCard, index: number) => (
                                 <StartupCard key={post?._id} post={post} />
-                            </>))}
+                            ))}
                         </ul>
                     </div>
                 }
