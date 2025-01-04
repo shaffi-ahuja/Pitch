@@ -9,10 +9,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ q
   //on every single nextjs page we have access to search params
   const query = (await searchParams).query;
   const params = { search: query || null };
-
-  const session = await auth();
-
-  const { data: posts } = await sanityFetch({ query: STARTUPS_QUERY , params})
+  const { data: posts } = await sanityFetch({ query: STARTUPS_QUERY, params })
   // this will revalidate whenever new changes are made
 
   return (
@@ -44,7 +41,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ q
 
         </ul>
       </section>
-      <SanityLive />
+      {/* <SanityLive /> */}
     </>
   );
 }
