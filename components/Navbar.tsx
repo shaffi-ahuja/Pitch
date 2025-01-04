@@ -8,7 +8,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 const Navbar = async () => {
     const session = await auth();
     return (
-        <header className="px-10 py-2 bg-white shadow-sm font-work-sans sticky top-0 ">
+        <header className="px-10 py-2 bg-white shadow-sm font-work-sans sticky top-0 z-20">
             <nav className="flex justify-between items-center">
                 <Link href="/">
                     <Image src="/logo.png" alt="logo" width={144} height={30} />

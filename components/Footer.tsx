@@ -1,13 +1,15 @@
 import Link from "next/link"
 
 const Footer = () => {
+const currentYear = new Date().getFullYear()
+
   return (
     <footer className='h-10 px-14 py-32'>
       <div className='border border-gray-300 my-5' />
       <div className='flex flex-row flex-between'>
 
         <div className='text-zinc-600'>
-          <p>© 2024 Pitch | All rights reserved</p>
+          <p>© {currentYear} Pitch | All rights reserved</p>
         </div>
         
         <div className='flex gap-4'>
